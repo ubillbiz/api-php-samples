@@ -15,8 +15,9 @@ $params = array(
 
 switch ($projectSubType) {
     case 'A':
-        $params['traffic_source_id'] = 1001; // ID одобренного источника трафика
         $params['return_url'] = 'http://ubill.biz'; // url адрес, куда необходимо перенаправить абонента после завершения действия
+        $params['ip'] = '111.111.111.111'; // IP адрес абонента
+        $params['ua'] = 'Mozilla/5.0'; // User-Agent браузера абонента
         break;
     case 'B':
         $params['landing'] = 1001; // ID лэндинга, на который будет направлен абонент, уточняйте у менеджера
